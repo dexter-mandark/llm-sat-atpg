@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.verify/
+.venv/
+venv/
+
+# Generated output
+results/
+jsons/
+*.log
+
+# Yosys / ABC artefacts
+abc.history

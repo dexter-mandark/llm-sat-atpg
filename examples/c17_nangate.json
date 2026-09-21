@@ -1,0 +1,196 @@
+{
+  "creator": "Yosys 0.62+81 (git sha1 53509a9b2, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)",
+  "modules": {
+    "c17": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "circuit.v:8.1-23.10"
+      },
+      "ports": {
+        "N1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "N2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "N3": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "N6": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "N7": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "N22": {
+          "direction": "output",
+          "bits": [ 7 ]
+        },
+        "N23": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+        "$abc$100$auto$blifparse.cc:397:parse_blif$101": {
+          "hide_name": 1,
+          "type": "INV_X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 6 ],
+            "ZN": [ 9 ]
+          }
+        },
+        "$abc$100$auto$blifparse.cc:397:parse_blif$102": {
+          "hide_name": 1,
+          "type": "INV_X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "ZN": [ 10 ]
+          }
+        },
+        "$abc$100$auto$blifparse.cc:397:parse_blif$103": {
+          "hide_name": 1,
+          "type": "AND2_X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 4 ],
+            "A2": [ 5 ],
+            "ZN": [ 11 ]
+          }
+        },
+        "$abc$100$auto$blifparse.cc:397:parse_blif$104": {
+          "hide_name": 1,
+          "type": "AOI21_X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B1": [ 10 ],
+            "B2": [ 9 ],
+            "ZN": [ 8 ]
+          }
+        },
+        "$abc$100$auto$blifparse.cc:397:parse_blif$105": {
+          "hide_name": 1,
+          "type": "NAND2_X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 4 ],
+            "A2": [ 2 ],
+            "ZN": [ 12 ]
+          }
+        },
+        "$abc$100$auto$blifparse.cc:397:parse_blif$106": {
+          "hide_name": 1,
+          "type": "OAI21_X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B1": [ 11 ],
+            "B2": [ 10 ],
+            "ZN": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$100$new_n10": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "$abc$100$new_n12": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "$abc$100$new_n8": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "$abc$100$new_n9": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "N1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "circuit.v:10.7-10.9"
+          }
+        },
+        "N2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "circuit.v:10.10-10.12"
+          }
+        },
+        "N22": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "circuit.v:12.8-12.11"
+          }
+        },
+        "N23": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "circuit.v:12.12-12.15"
+          }
+        },
+        "N3": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "circuit.v:10.13-10.15"
+          }
+        },
+        "N6": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "circuit.v:10.16-10.18"
+          }
+        },
+        "N7": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "circuit.v:10.19-10.21"
+          }
+        }
+      }
+    }
+  }
+}

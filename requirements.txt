@@ -1,0 +1,9 @@
+# SAT-ATPG runtime dependencies.
+#   pip install -r requirements.txt
+#
+# Yosys is needed only for --verilog (synthesising RTL to a netlist) and is a
+# system package, not a Python one:
+#   sudo pacman -S yosys / sudo apt install yosys / brew install yosys
+
+python-sat>=1.8.dev0    # PySAT: Glucose, CaDiCaL, MiniSat bindings
+pydantic>=2.0           # netlist / result models
